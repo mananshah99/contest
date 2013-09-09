@@ -15,10 +15,15 @@ public class Problem008 {
         int product = 0;
         int result = 0;
         int character = 0;
-        while(true)
+        for(while(i<number.length();)
         {
-            //use ParseInt to get the number, then multiply it for result
-            //then check if result is greater then product - if so make it product, if not reset it to 0
+            for(int j=0; j<5; j++){
+                result *= Integer.ParseInt(str.substring(i, i+1);
+                i++;
+            }
+            if(result>product) product = result; 
+            result = 0;
+            i++;
         }
     }
 }
