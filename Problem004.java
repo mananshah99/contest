@@ -19,7 +19,7 @@ public class Problem004 {
             for(int j=100; j<=999; j++)
             {
                 temp = i*j;
-                tempstring = temp.toString();
+                tempstring = temp.toString(); //throws a dereferencing error - broken code
                 if(tempstring.charAt(0)==tempstring.charAt(tempstring.length()-1)) { //palindrome
                     if(temp>largestpalindrome) largestpalindrome = temp;
                 }
