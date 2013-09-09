@@ -9,7 +9,8 @@ package projecteuler;
  * @author Manan
  */
 public class Problem002 {
-    public static void euler002(){
+    public static void euler002()
+    {
         int x= 1;
         int y=1;
         int z = 0;
