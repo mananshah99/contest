@@ -31,6 +31,8 @@ public class Problem007 {
     {
         if(n==2) return true;
         if(n%2==0) return false;
+        if(n>3 && n%3==0) return false;
+        if(n>5 && n%5==0) return false;
         boolean isPrime = true;
         for(int j=2; j<= (int)n/2; j++)
         {
