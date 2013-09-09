@@ -11,5 +11,14 @@ package projecteuler;
 public class Problem009 {
     public static void euler009() 
     {
+        int m = 1;
+        while(true)
+        {
+            for(int n=0; n<m; n++){
+                
+                //use m/n strategy to solve
+            }
+        }
     }
 }
+ 
