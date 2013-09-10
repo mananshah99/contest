@@ -9,7 +9,7 @@ package projecteuler;
  * @author Manan
  */
 public class Problem011 {
-    public void euler011(){
+    public static void euler011(){
     
     }
 }
