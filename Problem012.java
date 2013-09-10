@@ -13,9 +13,9 @@ public class Problem012 {
     int numfactors = 0;
     public static void euler012()
     {
-        while(getNumFactors(nextTriangularNumber()) !=500)
+        while(getNumFactors(nextTriangularNumber()) < 500)
         {
-            if(getNumFactors(nextTriangularNumber())==500) return i;
+            if(getNumFactors(nextTriangularNumber()) > 500) return i;
             numfactors = 0;
         }
         return i;
