@@ -4,6 +4,8 @@
  */
 package projecteuler;
 
+import java.io.IOException;
+
 /**
  *
  * @author Manan
@@ -13,7 +15,7 @@ public class ProjectEuler {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
        //implementation code is left commented out--
         
        /**PROBLEM 1**/
@@ -32,7 +34,8 @@ public class ProjectEuler {
         long num = 600851475143L;
         //p3.euler003(num);
         
-        //Problem 4 is incomplete
+        Problem004 p4 = new Problem004();
+        //p4.euler004();
         
         /**PROBLEM 5**/
         
@@ -48,9 +51,8 @@ public class ProjectEuler {
 
         Problem007 p7 = new Problem007();
         //p7.euler007();
-        
-        //problem 8 unfinished
-        
+   
+        Problem008.euler008();
         /**PROBLEM 9**/
         
         Problem009 p9 = new Problem009();
@@ -59,6 +61,10 @@ public class ProjectEuler {
         /**PROBLEM 10**/
         
         Problem010 p10 = new Problem010();
-        p10.euler010();
+        //p10.euler010();
+        
+        /**PROBLEM 12**/
+      //  Problem012 p12 = new Problem012();
+      //  p12.euler012();
     }
 }

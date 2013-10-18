@@ -9,31 +9,32 @@ package projecteuler;
  * @author Manan
  */
 public class Problem012 {
-    int i=1;
+//    long i=1;
+    int num = 1;
     int numfactors = 0;
-    public static void euler012()
+    public void euler012()
     {
-        while(getNumFactors(nextTriangularNumber()) < 500)
-        {
-            if(getNumFactors(nextTriangularNumber()) > 500) return i;
-            numfactors = 0;
-        }
-        return i;
+        //while(true)
+        //{
+            System.out.println(nextTriangularNumber(100));
+            numfactors=0;
+        //}
+        //return i;
     }
-    public int nextTriangularNumber()
+    public int nextTriangularNumber(int number)
     {
-         for(int j=0; j<i; j++)
-         {
-             i+=j;
-         }
-         return i;
+        return number *(number+1)/2;
     }
     public int getNumFactors(int num)
     {
-        for(int k=0; k<=(num/2); k++)
+        if(num<=1) return 0;
+        for(int k=2; k<(int)(num/2); k++)
         {
-            numfactors++;
+            if(num%k == 0){
+                numfactors++;
+            }
         }
+        numfactors +=2; //1 and the number itself
         return numfactors;
     }
 }
