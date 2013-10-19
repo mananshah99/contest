@@ -21,7 +21,7 @@ public class Problem012 {
                 System.out.println(nextTriangularNumber(index));
                 return;
             }
-            System.out.println(index + "  " + nextTriangularNumber(index) + "  " + getNumFactors(nextTriangularNumber(index)));
+            // debugging System.out.println(index + "  " + nextTriangularNumber(index) + "  " + getNumFactors(nextTriangularNumber(index)));
             numfactors=0;
             index++;
         }
@@ -36,7 +36,8 @@ public class Problem012 {
         if(num<=1) return 0;
         for(int k=1; k<=(Math.sqrt(num)); k++)
         {
-            if(num%k == 0){
+            if(num%k == 0)
+            {
                 numfactors+=2;
             }
             if(k==(Math.sqrt(num))) numfactors--;
