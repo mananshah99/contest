@@ -13,7 +13,10 @@ import java.math.BigInteger;
  *
  * @author Manan
  */
-public class Problem013 
+public class Problem013
 {
-     
+     public static void euler013() throws IOException
+     {
+         //TODO 
+     }
 }
