@@ -66,7 +66,7 @@ public class ProjectEuler {
         
         /**PROBLEM 11**/
         
-        Problem011.euler011();
+        //Problem011.euler011();
         
         /**PROBLEM 12**/
         Problem012 p12 = new Problem012();
@@ -74,9 +74,10 @@ public class ProjectEuler {
          
         /**PROBLEM 13**/
          
-        //Problem013.euler013();
+        Problem013.euler013();
          
         /**PROBLEM 14**/
         
+        //Problem014.euler014();
     }
 }
