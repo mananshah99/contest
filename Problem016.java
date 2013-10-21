@@ -15,7 +15,7 @@ public class Problem016 {
         
         long result = 0;
 	for (int i = 0; i < finalnum.length(); i++) {
-		result += Integer.valueOf(String.valueOf(finalnum.charAt(i)));
+		result += Integer.parseInt(String.valueOf(finalnum.charAt(i)));
 	}
 	System.out.println(result);
     }
