@@ -79,5 +79,11 @@ public class ProjectEuler {
         /**PROBLEM 14**/
         
         //Problem014.euler014();
+        
+        Problem015 p15 = new Problem015();
+        p15.euler015();
+        
+        Problem016 p16 = new Problem016();
+        p16.euler016();
     }
 }
