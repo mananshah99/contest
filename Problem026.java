@@ -12,17 +12,15 @@ import java.math.BigInteger;
  */
 public class Problem026 
 {
-    public static void main(String[] args) {
-        euler026();
-    }
+
     public static void euler026()
     {
         //BROKEN - DOES NOT WORK
-        int NUMERATOR = 1;
+        long NUMERATOR = 1;
         int MAX = 0;
         for(int i=2; i<4; i++)
         {
-            long bi = (((long)NUMERATOR)/(long)i);
+            long bi = ((NUMERATOR)/(long)i);
             System.out.println(bi);
             String s = String.valueOf(bi);
             for(int j=0; j<s.length()-1;j++)
