@@ -4,8 +4,6 @@
  */
 package projecteuler;
 
-import java.io.IOException;
-
 /**
  *
  * @author Manan
@@ -15,7 +13,7 @@ public class ProjectEuler {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
        //implementation code is left commented out--
         
        /**PROBLEM 1**/
@@ -106,6 +104,8 @@ public class ProjectEuler {
         Problem067 p67 = new Problem067();      
         //p67.euler067();
         
-        Problem025.euler025();
+        //Problem025.euler025();
+        Problem052 p52 = new Problem052();
+        p52.euler052();
     }
 }
