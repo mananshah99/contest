@@ -14,12 +14,14 @@ public class Problem052 {
         long num =1;            
         while(true)
         {
+            //2x, 3x, 4x, 5x, and 6x number
             long num2 = num*2;
             long num3 = num*3;
             long num4 = num*4;
             long num5 = num*5;
             long num6 = num*6;
             
+            //lengths of each
             int numlen = Long.toString(num).length();
             int num2len = Long.toString(num2).length();
             int num3len = Long.toString(num3).length();
@@ -52,7 +54,11 @@ public class Problem052 {
         int numlen = Long.toString(num).length();
         for(int i=0; i<numlen; i++)
         {
-            if(Long.toString(num2).indexOf(Long.toString(num).charAt(i))!=-1 && Long.toString(num3).indexOf(Long.toString(num).charAt(i))!=-1 && Long.toString(num4).indexOf(Long.toString(num).charAt(i))!=-1 && Long.toString(num5).indexOf(Long.toString(num).charAt(i))!=-1 && Long.toString(num6).indexOf(Long.toString(num).charAt(i))!=-1) //if each of the characters match in num2
+            if(Long.toString(num2).indexOf(Long.toString(num).charAt(i))!=-1 
+                    && Long.toString(num3).indexOf(Long.toString(num).charAt(i))!=-1 
+                    && Long.toString(num4).indexOf(Long.toString(num).charAt(i))!=-1 
+                    && Long.toString(num5).indexOf(Long.toString(num).charAt(i))!=-1 
+                    && Long.toString(num6).indexOf(Long.toString(num).charAt(i))!=-1) //if each of the characters match in num2
             {
                 if(i==numlen-1)
                 {
