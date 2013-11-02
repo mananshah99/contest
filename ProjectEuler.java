@@ -106,6 +106,8 @@ public class ProjectEuler {
         
         //Problem025.euler025();
         Problem052 p52 = new Problem052();
-        p52.euler052();
+        //p52.euler052();
+        
+        //Problem028.euler028();
     }
 }

@@ -25,17 +25,17 @@ public class Problem003 {
         }
         System.out.println(largest);
     }
-    public static boolean isPrime (long n)
+    public static boolean isPrime(long n)
     {
-        boolean prime = true;
-        for(long i=2; i<n; i++)
+        if(n==2) return true;
+        if(n%2==0) return false;
+        if(n>3 && n%3==0) return false;
+        if(n>5 && n%5==0) return false;
+        boolean isPrime = true;
+        for(int j=2; j<= Math.sqrt(n); j++)
         {
-            if(n%i==0)
-            {
-                prime = false;
-                return prime;
-            }
+            if(n%j==0) isPrime = false;//if its not prime (has factors)
         }
-        return prime;
+        return isPrime;
     }
 }

@@ -12,7 +12,7 @@ import java.math.BigInteger;
  */
 public class Problem048 
 {
-    public void euler048()
+    public static void euler048()
     {
         BigInteger bi = BigInteger.ZERO;
         BigInteger power = BigInteger.ONE;
