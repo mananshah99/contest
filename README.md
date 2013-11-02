@@ -1,7 +1,7 @@
 project-euler
 =============
 
-Solution code to problems on www.projecteuler.net. Individual problem solution code can be found in the problem files (ProblemXXX), and the executable file for java solutions can can be found at ProjectEuler.java. 
+Solution code to problems on www.projecteuler.net. Individual problem solution code can be found in the problem files (ProblemXXX), and the executable file for Java solutions can can be found at ProjectEuler.java. 
 
 A few notes:
   - Languages used include Java (primarily), Haskell, and C++
