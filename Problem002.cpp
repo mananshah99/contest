@@ -11,7 +11,7 @@ int main()
     while(z<4000000)
     {
         z = (x+y);
-       if(z%2==0) result += z;\
+       if(z%2==0) result += z;
        
        //next iteration
        
@@ -19,5 +19,5 @@ int main()
        y = z;
     }
     
-    cout<<result<<endl;
+    cout << result << endl;
 }
