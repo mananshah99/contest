@@ -21,9 +21,9 @@ public class Problem029 {
         for(int a = 2; a <= 100; a++) {
             for(int b = 2; b <=100; b++) {
                 pow = Math.pow(a,  b);
-                if(!distinctTerms.contains(power)) distinctTerms.add(pow);
+                if(!terms.contains(pow)) terms.add(pow);
             }
         }
-        System.out.println(distinctTerms.size());
+        System.out.println(terms.size());
     }
 }

@@ -10,25 +10,25 @@ package projecteuler;
  */
  
 public class Problem017 {
-	public void euler017 
+    
+	static int[] letterCounts = {0, 3, 3, 5, 4, 4, 3, 5, 5, 4, 3};
+	static int[] tensPlaceLetterCounts = {0, 0, 6, 6, 5, 5, 5, 7, 6, 6};
+        
+        static int thousandLetterCount = 8;
+        static int hundredLetterCount = 7;
+	public void euler017() 
 	{
-	
-	    static int[] letterCounts = {0, 3, 3, 5, 4, 4, 3, 5, 5, 4, 3};
-	    static int[] tensPlaceLetterCounts = {0, 0, 6, 6, 5, 5, 5, 7, 6, 6};
 
-		final static int thousandLetterCount = 8;
-		final static int hundredLetterCount = 7;
-		
-		final static int max = 1000;
-	    int sum = 0;
+             int max = 1000;
+             
+             int sum = 0;
 	    
 		for(int i=1; i <= max; i++) 
 		{
 			sum += toWords(i);
 		}
 		System.out.println(sum);
-	}
-	
+        }
 	public static int toWords(int val) 
 	{
 		int sum = 0;
@@ -50,9 +50,10 @@ public class Problem017 {
 			if((val % place) > 0) 
 			{
 				sum += 3; //"and" - don't forget this
-				sum += countLetters(val % place);
+				sum += toWords(val % place);
 			}
 		}
+
 		else 
 		{
 			if(place == 1)
@@ -83,8 +84,8 @@ public class Problem017 {
 						break;
 				}
 			}
-			else sum += tensPlaceLetterCounts[digit] + toWords[val % place]; //recursive call
-		}
+			else sum += tensPlaceLetterCounts[digit] + toWords(val % place); //recursive call
+                }
 		return sum;
 	}
 }
