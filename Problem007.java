@@ -15,10 +15,7 @@ public class Problem007 {
         int num=2;
         while(true)
         {
-            if(isPrime(num))
-            {
-                count++;
-            }
+            if(isPrime(num)) count++;
             if(count==10001) 
             {
                 System.out.println(num); 
@@ -33,11 +30,10 @@ public class Problem007 {
         if(n%2==0) return false;
         if(n>3 && n%3==0) return false;
         if(n>5 && n%5==0) return false;
-        boolean isPrime = true;
         for(int j=2; j<= (int)n/2; j++)
         {
-            if(n%j==0) isPrime = false;//if its not prime (has factors)
+            if(n%j==0) return false;//if its not prime (has factors)
         }
-        return isPrime;
+        return true;
     }
 }
