@@ -18,11 +18,11 @@ public class Problem028 {
          * use the above pattern to write a solve (where n goes from 3 to 1001, incrementing by 2)
          */
          
-        long result = 1; //start with unique case of 1 (DIMENSIONS = 1)
-        for(int DIMENSIONS = 3; DIMENSIONS<=1001; DIMENSIONS+=2){
-            int DIMENSIONS_2 = (DIMENSIONS)*(DIMENSIONS);
-            result += (DIMENSIONS_2 - (DIMENSIONS - 1)) + (DIMENSIONS_2 - 2*(DIMENSIONS - 1))
-                    + (DIMENSIONS_2 - 3*(DIMENSIONS - 1)) + DIMENSIONS_2;
+        long result = 1; //start with unique case of 1 (dimensions = 1)
+        for(int dimensions = 3; dimensions<=1001; dimensions+=2){
+            int dimensions_2 = (dimensions)*(dimensions);
+            result += (dimensions_2 - (dimensions - 1)) + (dimensions_2 - 2*(dimensions - 1))
+                    + (dimensions_2 - 3*(dimensions - 1)) + dimensions_2;
         }
         System.out.println(result);
     }
