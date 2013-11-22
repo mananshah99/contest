@@ -24,7 +24,6 @@ public class Problem031 {
                                     sum = a*1+b*2+c*5+d*10+e*20+f*50+g*100;
                                     if(sum==200){
                                         count++;
-                                        System.out.println(count);
                                     }
                                 }
                             }
