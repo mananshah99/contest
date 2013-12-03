@@ -20,7 +20,6 @@ public class Problem040
         for(int i=1; i<1000000; i++)
         {
             s += i;
-            System.out.println("here " + i);
             if(s.length()>999999) break;
         }
         long result = 1;
