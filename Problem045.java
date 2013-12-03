@@ -30,9 +30,7 @@ public class Problem045 {
          * It can be verified that T285 = P165 = H143 = 40755.
          * 
          * Find the next triangle number that is also pentagonal and hexagonal.
-         */
-        
-        
+         */        
     }
     public static long getTriangleNum(int n)
     {

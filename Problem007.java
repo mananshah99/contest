@@ -31,9 +31,7 @@ public class Problem007 {
         if(n>3 && n%3==0) return false;
         if(n>5 && n%5==0) return false;
         for(int j=2; j<= (int)n/2; j++)
-        {
             if(n%j==0) return false;//if its not prime (has factors)
-        }
         return true;
     }
 }
