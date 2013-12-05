@@ -8,7 +8,7 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem042 
+public class Problem042 extends Library
 {
     static int numtri = 0;
     public static void euler042()
@@ -23,19 +23,5 @@ public class Problem042
             sum = 0;
         }
         System.out.println(numtri);
-    }
-    public static boolean isTriangular(int num)
-    {
-        int test = (8*num) + 1;
-        if(isPerfectSquare(test)) return true;
-        return false;
-    }
-    public static boolean isPerfectSquare(long n)
-    {
-        if (n < 0)
-          return false;
-
-        long test = (long)(Math.sqrt(n) + 0.5);
-        return test*test == n;
     }
 }

@@ -8,7 +8,7 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem012 {
+public class Problem012 extends Library {
 
     int index = 0;
     int numfactors = 0;

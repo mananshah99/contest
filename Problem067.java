@@ -12,10 +12,11 @@ import java.io.IOException;
  *
  * @author Manan
  */
-public class Problem067 {
+public class Problem067 extends Library {
         
     public void euler067() throws IOException
     {
+        
         /*int[][] triangle = new int[98][];
         BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Manan\\Documents\\NetBeansProjects\\projectEuler\\src\\projecteuler\\Problem067.txt"));
         for (int i = 0; i < triangle.length-2; i++) 
@@ -131,15 +132,11 @@ public class Problem067 {
     
         for(int depth = triangle.length-2; depth >=0; depth--)
         {
-            for (int traverse = 0; traverse <= depth; traverse++) 
+            for (int traverse = 0; traverse <= depth; traverse++){ 
                 if(triangle[depth + 1][traverse] > triangle[depth + 1][traverse + 1]) 
-                {
                     triangle[depth][traverse]+= triangle[depth + 1][traverse];
-                }
-                else 
-                {
-                    triangle[depth][traverse]+= triangle[depth + 1][traverse + 1];
-                }         
+                else triangle[depth][traverse]+= triangle[depth + 1][traverse + 1];
+            }
         }
         System.out.println(triangle[0][0]);
     }

@@ -8,15 +8,13 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem009 {
+public class Problem009 extends Library {
     public static void euler009() 
     {
         int m = 1;
         while(true)
         {
-            int a=0;
-            int b=0;
-            int c=0;
+            int a, b, c;
             for(int n=0; n<m; n++){
                 
                 a=((m*m)-(n*n));

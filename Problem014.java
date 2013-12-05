@@ -8,7 +8,7 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem014 {
+public class Problem014 extends Library {
     public static void euler014()
     {
         int MAX_LENGTH = 0;

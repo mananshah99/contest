@@ -8,7 +8,7 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem005 {
+public class Problem005 extends Library {
     public static void euler005() 
     {
         int i = 20;
@@ -18,9 +18,7 @@ public class Problem005 {
             for(int j = 1; j<=20; j++)
             {
                 if(i%j!=0)
-                {
                     break;
-                }
                 else count++;
             }
             if(count==20)

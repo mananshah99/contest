@@ -8,7 +8,7 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem011 {
+public class Problem011 extends Library {
     public static void euler011(){
             int arr [][] = 
             {

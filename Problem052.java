@@ -8,7 +8,7 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem052 {
+public class Problem052 extends Library {
     public static void euler052()
     {
         long num =1;            
@@ -41,7 +41,7 @@ public class Problem052 {
             num++;
          }
     }
-    public static boolean isSameLength(int numlen, int num2len, int num3len, int num4len, int num5len, int num6len)
+    private static boolean isSameLength(int numlen, int num2len, int num3len, int num4len, int num5len, int num6len)
     {
        if((numlen == num2len) && (numlen == num3len) && (numlen == num4len) && (numlen == num5len) && (numlen == num6len))
        {
@@ -49,7 +49,7 @@ public class Problem052 {
        }
        else return false;
     }
-    public static boolean hasSameNumbers(long num, long num2, long num3, long num4, long num5, long num6)
+    private static boolean hasSameNumbers(long num, long num2, long num3, long num4, long num5, long num6)
     {
         int numlen = Long.toString(num).length();
         for(int i=0; i<numlen; i++)

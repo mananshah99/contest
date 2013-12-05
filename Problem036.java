@@ -9,8 +9,7 @@ package projecteuler;
  * @author Manan
  */
 public class Problem036 {
-    public static void euler036()
-    {
+    public static void euler036(){
         int sum = 0;
         for(int i=0; i<=1000000; i++){
             String temp = Integer.toString(i);
@@ -26,7 +25,7 @@ public class Problem036 {
 	for(int i=0; i<(str.length()/2); i++)
 	{
 		if(str.charAt(i)==str.charAt(str.length()-(i+1))){} //checks if the character at place i is the same as its counterpart
-		else return false; //it's already not a palindrome, so return false.
+		else return false; //hey, it's already not a palindrome, so return false.
 	}
 	return true;
     }

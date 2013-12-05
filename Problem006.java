@@ -8,7 +8,7 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem006 {
+public class Problem006 extends Library {
     public static void euler006() 
     {
         //sum of squares of first 100 natural numbers
@@ -25,9 +25,6 @@ public class Problem006 {
         }
         result2 *= result2; //square of result
         
-        int finalresult=0;
-        finalresult = result2-result1;
-        
-        System.out.println(finalresult);
+        System.out.println(result2-result1);
     }
 }

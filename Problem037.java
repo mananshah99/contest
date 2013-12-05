@@ -10,7 +10,9 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem037 {
+
+//not finished
+public class Problem037 extends Library {
     public static void euler037(){
         long sum = 0;
         int count = 0;
@@ -24,18 +26,6 @@ public class Problem037 {
             num++;
         }
         System.out.println(sum);
-    }
-    public static boolean isPrime(long n)
-    {
-        if(n==2) return true;
-        if(n%2==0) return false;
-        if(n>3 && n%3==0) return false;
-        if(n>5 && n%5==0) return false;
-        for(int j=2; j<= Math.sqrt(n); j++)
-        {
-            if(n%j==0) return false;//if its not prime (has factors)
-        }
-        return true;
     }
     public static boolean isTruncatableRight(long n)
     {

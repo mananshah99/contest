@@ -8,11 +8,10 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem018 {
+public class Problem018 extends Library {
     public static void euler018()
     {
         //triangle continuously gets reduced- the sum of the maximum length is at triangle[0][0]
-        //example of dynamic programming
          int[][] triangle = {
                 {75},
                 {95,64},

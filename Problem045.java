@@ -8,7 +8,9 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem045 {
+
+//not finished
+public class Problem045 extends Library {
     public static void euler045()
     {
         for(int n=285; n<100000000; n++)

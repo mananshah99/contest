@@ -8,7 +8,7 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem004 {
+public class Problem004 extends Library {
     public static void euler004() 
     {
         int temp = 0;
@@ -25,14 +25,5 @@ public class Problem004 {
                 }
             }
         System.out.println(largestpalindrome);
-        }    
-    public static boolean isPalindrome (String str)
-    {
-	for(int i=0; i<str.length(); i++)
-	{
-		if(str.charAt(i)==str.charAt(str.length()-(i+1))){} //checks if the character at place i is the same as its counterpart
-		else return false; //hey, it's already not a palindrome, so return false.
-	}
-	return true;
-    }
+    }    
 }

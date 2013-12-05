@@ -10,12 +10,12 @@ import java.math.BigInteger;
  *
  * @author Manan
  */
-public class Problem048 
+public class Problem048 extends Library
 {
     public static void euler048()
     {
         BigInteger bi = BigInteger.ZERO;
-        BigInteger power = BigInteger.ONE;
+        BigInteger power;
         for(int i=1; i<=1000; i++)
         {
             power = BigInteger.valueOf(i).pow(i);

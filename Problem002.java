@@ -8,7 +8,7 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem002 {
+public class Problem002 extends Library {
     public static void euler002()
     {
         int x= 1;

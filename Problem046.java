@@ -10,16 +10,13 @@ import java.util.Arrays;
  *
  * @author Manan
  */
-public class Problem046 
+public class Problem046 extends Library
 {
-    static boolean[] primes = new boolean[10000];
     static boolean[] squares = new boolean[10000];
-    public static void main(String[] args) {
-        euler046();
-    }
+    static boolean[] primes;
     public static void euler046()
     {
-        primeSeive(primes);
+        primes = primeSeive(10000);
         squares(squares);
         int count = 10;  
         while(true)
@@ -32,19 +29,7 @@ public class Problem046
             count++;
         }
     }
-    public static void primeSeive(boolean[] primes)
-    {
-        Arrays.fill(primes, true);
-        
-        for (int i = 2; i*i <= primes.length; i++) 
-        {
-            if (primes[i]) 
-            {
-                for (int j = i; i*j <= primes.length; j++) 
-                    if(i*j < primes.length) primes[i*j] = false;
-            }
-        }
-    }
+
     public static void squares(boolean[] squares)
     {
         Arrays.fill(squares, false);

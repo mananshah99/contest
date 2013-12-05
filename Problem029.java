@@ -11,11 +11,11 @@ import java.util.ArrayList;
  * @author Manan
  */
 
-public class Problem029 {
+public class Problem029 extends Library {
 
    public static void euler029()
    {
-        double pow = 0;
+        double pow;
         ArrayList<Double> terms = new ArrayList<>();
         
         for(int a = 2; a <= 100; a++) {

@@ -8,8 +8,8 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem031 {
-    //terrible running time - will fix 
+public class Problem031 extends Library {
+    //terrible running time - will fix with a better algorithm
     public static void euler031()
     {
         int count = 1;

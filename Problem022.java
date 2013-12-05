@@ -9,20 +9,17 @@ import java.util.Arrays;
  *
  * @author Manan
  */
-public class Problem022 {
+public class Problem022 extends Library {
     public static void euler022() 
     {
            Arrays.sort(names);
            int sum = 0;
            for (int i = 0; i < names.length; i++) 
            {
-                   int namevalue = 0;
-                        
-                   for (int j = 0; j < names[i].length(); j++) //go through the name, get char value
-                   {
-                           namevalue += names[i].charAt(j) - 'A' + 1; //generic value generation                            
-                   }
-                   sum += namevalue * (i + 1); //starting at zero - we need to increment by 1 to get actual value
+               int namevalue = 0;
+               for (int j = 0; j < names[i].length(); j++) //go through the name, get char value
+                   namevalue += names[i].charAt(j) - 'A' + 1; //generic value generation                            
+               sum += namevalue * (i + 1); //starting at zero - we need to increment by 1 to get actual value
            }
            System.out.println(Integer.toString(sum));
     }  

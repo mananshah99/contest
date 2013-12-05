@@ -10,7 +10,7 @@ import java.math.BigInteger;
  *
  * @author Manan
  */
-public class Problem026 
+public class Problem026 extends Library 
 {
 
     public static void euler026()
