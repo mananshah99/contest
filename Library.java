@@ -134,4 +134,26 @@ public class Library
         }
         return primes;
     }
+    public int commonLetters(String s1, String s2)
+    {
+        int[] arr1 = new int[27];
+        int[] arr2 = new int[27];
+        
+        for(int i=0; i<s1.length(); i++)
+        {
+            int temp = s1.charAt(i) - 'a' + 1; 
+            arr1[temp] += 1;
+        }
+        
+        for(int i=0; i<s2.length(); i++)
+        {
+            int temp = s2.charAt(i)- 'a' + 1;
+            arr2[temp] += 1;
+        }
+        
+        int count = 0;
+        for(int i=0; i<arr1.length; i++)
+            if(arr1[i]>0 && arr2[i]>0) count+=Math.min(arr1[i], arr2[i]);
+        return count;
+   }
 }
