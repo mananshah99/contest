@@ -41,6 +41,11 @@ public class Problem037 extends Library {
         }
         return false;
     }
+    
+    
+    /* To Do 
+     * Supposed to check if a number is truncatable going left in
+     */
     public static boolean isTruncatableLeft(long n)
     {
         if(n<10)
@@ -55,5 +60,5 @@ public class Problem037 extends Library {
         }
         return false;
     }
-      }
+ }
 
