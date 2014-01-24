@@ -4,17 +4,12 @@
  */
 package projecteuler;
 
-import java.util.Arrays;
-
 /**
  *
  * @author Manan
  */
 public class Problem027 extends Library
 {
-    public static void main(String[] args) {
-        euler027();
-    }
     static boolean[] primes = new boolean[100000];
     public static void euler027()
     {

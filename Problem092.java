@@ -11,9 +11,7 @@ import java.util.Arrays;
  * @author Manan
  */
 public class Problem092 {
-    public static void main(String[] args) {
-        euler092();
-    }
+
     public static void euler092()
     {
         int result = 0;
