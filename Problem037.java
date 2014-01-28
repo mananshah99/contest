@@ -11,7 +11,7 @@ package projecteuler;
  * @author Manan
  */
 
-//not finished
+//incomplete
 public class Problem037 extends Library {
     public static void euler037(){
         long sum = 0;
@@ -48,17 +48,8 @@ public class Problem037 extends Library {
      */
     public static boolean isTruncatableLeft(long n)
     {
-        if(n<10)
-        {
-             if(isPrime(n)) return true;
-        }
-        else
-        {
-            long temp = n%10;
-            if(!isPrime(temp)) return false;
-            return isTruncatableRight(n/10);
-        }
-        return false;
+        int length = Long.toString(n).length();
+        for(double i=(Math.pow(10., (double)length)); i>0; i-=10)
     }
  }
 

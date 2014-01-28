@@ -67,30 +67,6 @@ public class Library
         else return false;
     }
     
-    public static ArrayList<String> permute(String num) 
-    {
-       ArrayList<String> result;
-        
-       int numpermutations = 1;
-       for(int i = 1; i <= num.length(); i++) 
-           numpermutations *= i;
-       
-       result = new ArrayList<>(numpermutations);
-       if (numpermutations == 1) 
-       {
-           result.add(0, num);
-           return result;
-       }
-       for (int i = 0; i < num.length(); i++) 
-       {
-           String substring = num.substring(0, i) + num.substring(i + 1);
-           List<String> temp = permute(substring);
-           for (int j = 0; j < temp.size(); j++)
-               result.set(i * temp.size() + j, num.charAt(i) + temp.get(j));
-       }
-       return result;
-    }
-    
     public static String toBinary(int num){
         return Integer.toBinaryString(num);
     }

@@ -30,7 +30,7 @@ public class Problem089
         String regex = "DCCCC|LXXXX|VIIII|CCCC|XXXX|IIII";
         Pattern pattern = Pattern.compile(regex);
         Matcher m = pattern.matcher(test);
-        String later = m.replaceAll("aa");
+        String later = m.replaceAll("xx");
         System.out.println(test.length() - later.length());
     }
     static String test = "MMMMDCLXXII\n"
