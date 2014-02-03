@@ -8,7 +8,7 @@ package projecteuler;
  *
  * @author Manan
  */
-public class Problem202 
+public class Problem202 extends Library
 {
     //This code takes a bit over 12 hours to finish running. Please don't use it
     //as an example for future problems. 
@@ -44,33 +44,5 @@ public class Problem202
     System.out.println(count);
 
   }
-   public static long gcd(long u, long v)
-   {
-        long t, k;
-
-        if (v == 0) return u;
-
-        if (u < v)
-        {
-          t = u;
-          u = v;
-          v = t;
-        }
-
-        for(k = 1; (u & 1) == 0 && (v & 1) == 0; k <<= 1)
-          u >>= 1; v >>= 1;
-
-        t = (u & 1) != 0 ? -v : u;
-        while (t != 0)
-        {
-          while ((t & 1) == 0) t >>= 1;
-          if (t > 0)
-            u = t;
-          else
-            v = -t;
-          t = u - v;
-        }
-        return u * k;
-      }
 }
 
