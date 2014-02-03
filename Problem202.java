@@ -22,7 +22,7 @@ public class Problem202 extends Library
     long count = 0;
     
     /* We want to determine how many paths are possible given that the laser
-     * bounces off 12017639147 surfaces. We see that: 
+     * bounces off 12017639147 surfaces.  
      * 
      * The number of ways one has to search for equals the number of pairs (a,b) 
      * of positive integers which fulfill the following conditions:
@@ -42,7 +42,6 @@ public class Problem202 extends Library
         count++;
     }
     System.out.println(count);
-
   }
 }
 

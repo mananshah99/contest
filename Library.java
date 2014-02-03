@@ -107,7 +107,7 @@ public class Library
         }
         return primes;
     }
-    public int commonLetters(String s1, String s2)
+    public static int commonLetters(String s1, String s2)
     {
         int[] arr1 = new int[27];
         int[] arr2 = new int[27];
@@ -129,8 +129,18 @@ public class Library
             if(arr1[i]>0 && arr2[i]>0) count+=Math.min(arr1[i], arr2[i]);
         return count;
    }
-    private static List<String> getPermutations(String prefix, String str) 
-    {
+   public static boolean hasSameDigits(int u, int v)
+   {
+        char[] ud = Integer.toString(u).toCharArray();
+        char[] vd = Integer.toString(v).toCharArray();
+        
+        Arrays.sort(ud); Arrays.sort(vd);
+        
+        if(Arrays.equals(ud, vd)) return true;
+        return false;
+   }
+   private static List<String> getPermutations(String prefix, String str) 
+   {
         int n = str.length();
         List<String> list = new ArrayList<>();
         //if n is 0 we have a permutation (which is prefix)
@@ -143,8 +153,8 @@ public class Library
         }
         return list;
     }   
-       public static long gcd(long u, long v)
-   {
+    public static long gcd(long u, long v)
+    {
         long t, k;
 
         if (v == 0) return u;
@@ -170,5 +180,5 @@ public class Library
           t = u - v;
         }
         return u * k;
-      }
+     }
 }

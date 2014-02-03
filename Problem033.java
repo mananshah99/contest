@@ -10,9 +10,7 @@ package projecteuler;
  */
 public class Problem033 extends Library 
 {
-    public static void main(String[] args) {
-        euler033();
-    }
+    //INCOMPLETE CODE
     public static void euler033()
     {
         for(int numerator=10; numerator<=98; numerator++)
