@@ -4,21 +4,18 @@
  */
 package projecteuler;
 
-import java.math.BigInteger;
-
-
 /**
  *
  * @author Manan
  */
 public class Problem024 extends Library 
 {
-    /*
-     * to run this problem, call 
+    public static void euler024()
+    {
         permutation("", "0123456789");
-     * in main
-     */
+    }  
     
+    //modified version of permutation in Library
     static int count = 1;
     private static void permutation(String prefix, String str) 
     {
@@ -33,5 +30,4 @@ public class Problem024 extends Library
             }
         }
     }
-    
 }

@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package projecteuler;
 
 import java.math.BigInteger;
@@ -25,6 +21,7 @@ public class Library
 
     public static boolean isPrime(long n) 
     {
+        if (n==1) return false;
         if (n == 2) return true;
         if (n % 2 == 0) return false;
         if (n > 3 && n % 3 == 0) return false;
@@ -132,4 +129,46 @@ public class Library
             if(arr1[i]>0 && arr2[i]>0) count+=Math.min(arr1[i], arr2[i]);
         return count;
    }
+    private static List<String> getPermutations(String prefix, String str) 
+    {
+        int n = str.length();
+        List<String> list = new ArrayList<>();
+        //if n is 0 we have a permutation (which is prefix)
+        if (n == 0) {list.add(prefix);}
+        else 
+        {
+            for (int i = 0; i < n; i++){
+                getPermutations(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1, n));
+            }
+        }
+        return list;
+    }   
+       public static long gcd(long u, long v)
+   {
+        long t, k;
+
+        if (v == 0) return u;
+
+        if (u < v)
+        {
+          t = u;
+          u = v;
+          v = t;
+        }
+
+        for(k = 1; (u & 1) == 0 && (v & 1) == 0; k <<= 1)
+          u >>= 1; v >>= 1;
+
+        t = (u & 1) != 0 ? -v : u;
+        while (t != 0)
+        {
+          while ((t & 1) == 0) t >>= 1;
+          if (t > 0)
+            u = t;
+          else
+            v = -t;
+          t = u - v;
+        }
+        return u * k;
+      }
 }

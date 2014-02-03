@@ -54,16 +54,4 @@ public class Problem218 extends Library
          u++;
       }
    }
-   
-   private static long gcd(long a, long b)
-   {
-   	//Euclid's algorithm
-    	while (b > 0)
-    	{
-        	long temp = b;
-        	b = a % b; 
-        	a = temp;
-    	}
-    	return a;
-   }
 }
