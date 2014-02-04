@@ -1,6 +1,6 @@
 project-euler
 =============
-![Project Euler Rank](https://raw2.github.com/mananshah99/project-euler/master/image.png)
+![Project Euler Rank](http://projecteuler.net/profile/mananshah.png)
 
 Solution code to problems on www.projecteuler.net. Individual problem solution code can be found in the problem files (ProblemXXX), and the shared Library used for all Java solutions can can be found at Library.java. 
 
