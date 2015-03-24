@@ -1,12 +1,52 @@
-project-euler
-=============
-![Project Euler Ranking](http://projecteuler.net/profile/mananshah.png)
+#Online Judge Solutions
+This repository contains my solutions to [codeforces](http://codeforces.com) problems  as well as numerous other algorithmic websites in c++11. Feel free to copy and reuse code in order to gain a new perspective on any problem or to learn coding by example.
 
-Solution code to problems on www.projecteuler.net. Individual problem solution code can be found in the problem files (ProblemXXX), and the shared Library used for all Java solutions can can be found at Library.java. The library for all C++ solutions can be found at library.h and at library.cpp (header and implementation files) 
+##Codeforces
+###Format
+Codeforces solution files can be found at ```/codeforces/[Problem Number][Problem Letter].cpp```. 
 
-A few notes:
-  - Languages used include Java (primarily), C++, and Haskell (rarely)
-  - Code should be used as guidance for the development of your own answers, NOT copied character-for-character in solutions; the whole point of Project Euler is to help develop one's programming skills, not to learn how to copy code. 
-  - This repository is still in development; please continue to check back for more improvements and additions to code
+For example, the solution to Codeforces problem 1A contains the method
+```cpp
+int main()
+{
+	ll n, m, a;
 
-Download the latest revision of the code here: www.github.com/mananshah99/project-euler/archive/master.zip
+	std::cin >> n;
+	std::cin >> m;
+	std::cin >> a;
+
+	ll T1 = n / a;  
+	ll T2 = m / a;  
+
+	if (n%a != 0) T1++;   
+	if (m%a != 0) T2++;  
+
+	ll f = T1*T2;
+	std::cout << f;
+	return 0;
+}
+```
+which solves the problem in the given time limit.
+
+###Headers
+Each solution also contains a header file, including 
+* the name of the problem
+* the language the code was submitted in
+* the status of the submission
+* how long the code took to complete
+* how many KB of memory were allocated
+
+For example, the solution in problem 1A contains the following header: 
+```cpp
+/*
+Submission Details:
+
+mananshah	 
+1A - Theatre Square	 
+GNU C++	
+
+Accepted	 
+30 ms	 
+0 KB
+*/
+```
